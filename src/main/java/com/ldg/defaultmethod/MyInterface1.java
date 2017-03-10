@@ -9,5 +9,7 @@ import java.util.stream.Stream;
 public interface MyInterface1 {
     default  void myMethod(){
         System.out.println("mymethod1111");
+
+
     }
 }
