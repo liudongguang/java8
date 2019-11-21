@@ -15,7 +15,7 @@ public class StreamTest4 {
         Arrays.asList(stringArray).forEach(System.out::println);
         System.out.println("-----------------流转list-------------------------");
         Stream<String> stream2 = Stream.of("hello","world","helloworld");
-       // List<String> list=stream.collect(Collectors.toList());
+       //List<String> list=stream.collect(Collectors.toList());
        // List<String> list=stream.collect(()->new ArrayList<>(),(theList,item)->theList.add(item),(theList1,theList2)->theList1.addAll(theList2));
          List<String> list=stream2.collect(ArrayList::new,ArrayList::add,ArrayList::addAll);
         list.forEach(System.out::println);
